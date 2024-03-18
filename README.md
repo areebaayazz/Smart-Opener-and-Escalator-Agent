@@ -18,8 +18,13 @@ This solution automates the management and response process to leads for Antemat
 
 pip install -r requirements.txt
 
-
+## Configuration
+1. Set up environment variables:
+   - `API_KEY`: Your API key for external services.
+     
 ## Usage
+
+Navigate to the project directory: `cd Intelligent-Opener-and-Escalator-Agent`
 
 - **Generating Opening Emails (Opener Agent)**:
 Execute the Opener Agent script to generate opening emails for each lead:
