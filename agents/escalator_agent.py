@@ -40,7 +40,7 @@ def analyze_and_respond(lead_info: dict) -> Tuple[str, Optional[str]]:
             return 'escalate', None
         else:
             #If budget is mentioned without details, ask for more specifics
-            details_request_prompt = f"Dear {lead_info.get('Name')},\nThank you for your interest in Antematter. We are interested in '{lead_info.get('Project Title', '')}' but need more details to provide an accurate estimate. Could you specify your budget range and any specific project requirements or goals?"
+            details_request_prompt = f"Dear {lead_info.get('Name')},\nThank you for your interest in xyz. We are interested in '{lead_info.get('Project Title', '')}' but need more details to provide an accurate estimate. Could you specify your budget range and any specific project requirements or goals?"
             return 'ask for details', details_request_prompt
     elif 'more information' in lead_response:
         #If the lead is asking for more information, escalate the lead
@@ -53,7 +53,7 @@ def analyze_and_respond(lead_info: dict) -> Tuple[str, Optional[str]]:
         if response.flatten() and response.flatten()[0].generations:
             generated_text = response.flatten()[0].generations[0][0].text.strip()
             #Replace placeholder with company name in the generated text
-            generated_text = generated_text.replace("[Your Name]", "Antematter.io")
+            generated_text = generated_text.replace("[Your Name]", "xyz.inc")
         else:
             #Fallback prompt asking for more project details
             fallback_prompt = f"Your project '{lead_info.get('Project Title', '')}' is intriguing, and we're keen to know more. Could you share further details about the project's scope and any budget considerations to help us tailor our proposal?"
