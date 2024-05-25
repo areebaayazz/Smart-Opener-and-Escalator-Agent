@@ -1,6 +1,6 @@
-# Antematter Sales Assistance Solution
+# Sales Assistance Solution
 
-This solution automates the management and response process to leads for Antematter's sales department, encompassing two pivotal components: the Opener Agent and the Escalator Agent.
+This solution automates the management and response process to leads for a company's sales department, encompassing two pivotal components: the Opener Agent and the Escalator Agent.
 
 ## Overview
 
