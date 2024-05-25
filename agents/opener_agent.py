@@ -3,9 +3,9 @@ import os
 from langchain.llms import OpenAI as LangChainOpenAI
 
 #constants for default sender information
-DEFAULT_SENDER_NAME = "Antematter"  #sender's name for email signature
-DEFAULT_SENDER_EMAIL = "contact@antematter.io"  #sender's email for email signature
-DEFAULT_COMPANY_NAME = "Antematter.io"  
+DEFAULT_SENDER_NAME = "xyz"  #sender's name for email signature
+DEFAULT_SENDER_EMAIL = "contact@xyz.inc"  #sender's email for email signature
+DEFAULT_COMPANY_NAME = "xyz.inc"  
 
 # Load the email prompt template from markdown file
 with open('./prompts/email_prompt.md', 'r') as file:
